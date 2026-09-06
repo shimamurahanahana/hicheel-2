@@ -461,6 +461,59 @@
         color: var(--muted);
       }
 
+      .stories-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .story-card {
+        background: rgba(255,255,255,0.8);
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        padding: 24px;
+        box-shadow: 0 12px 30px rgba(15,23,42,0.04);
+      }
+
+      .review-stars {
+        color: var(--secondary);
+        font-size: 1.1rem;
+        letter-spacing: 0.14em;
+      }
+
+      .story-card p {
+        margin: 18px 0 20px;
+        color: var(--muted);
+        font-size: 1.02rem;
+      }
+
+      .reviewer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, #f7d3d9, #f8e7c4);
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .reviewer strong {
+        display: block;
+        font-size: 0.96rem;
+      }
+
+      .reviewer span {
+        color: var(--muted);
+        font-size: 0.86rem;
+      }
+
       .cta {
         margin: 30px 0 60px;
         background: linear-gradient(135deg, #111e31, #192f4f 48%, #26436c);
@@ -764,6 +817,58 @@
               <h4>Амар амгалан</h4>
               <p>Метро, автобус ашиглан хот доторх газруудыг амархан холбож, цагийг үргүйдэхгүй.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stories">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Traveler stories</span>
+              <h2>Аялагчдын сэтгэгдэл</h2>
+            </div>
+            <p>
+              Япон аялалын туршлага, тайван цэвэр орчин, соёлын баялагийг яг юу гэж мэдэрсэн тухайгаа хуваалцлаа.
+            </p>
+          </div>
+
+          <div class="stories-grid">
+            <article class="story-card">
+              <div class="review-stars">★★★★★</div>
+              <p>“Японд ирэхэд бүгдийг нэг дороос ойлгож, цагийг зөв зохистой ашиглах боломжтой байсан. Метро, хоол, соёл бүгд сайхан зохицсон.”</p>
+              <div class="reviewer">
+                <div class="avatar">Б</div>
+                <div>
+                  <strong>Батсайхан</strong>
+                  <span>Tokyo trip</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div class="review-stars">★★★★★</div>
+              <p>“Kyoto руу явах маршрут маш ойлгомжтой байсан. Сүм, цэцэрлэг, хоол бүгд тодорхой, тайван, гайхалтай туршлага болсон.”</p>
+              <div class="reviewer">
+                <div class="avatar">Э</div>
+                <div>
+                  <strong>Энхзаяа</strong>
+                  <span>Kyoto adventure</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card">
+              <div class="review-stars">★★★★★</div>
+              <p>“Олон зураг, мэдээ зүүдэлж байсан ч бодит туршлага нь илүү сайхан. Хотын амьдрал, хоолны амт, цэвэр орчин намайг маш их татлаа.”</p>
+              <div class="reviewer">
+                <div class="avatar">М</div>
+                <div>
+                  <strong>Мөнхнаран</strong>
+                  <span>Osaka food tour</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
